@@ -843,3 +843,174 @@
 //
 //	}
 //}
+
+//5-1
+
+//public class Main {
+//	public static void hello() {
+//		System.out.println("湊さん、こんにちは");
+//	}
+//}
+
+//5-2
+//public class Main {
+//	public static void main(String[] args) {
+//		System.out.println("メソッドを呼び出します");
+//		hello();
+//		System.out.println("メソッドの呼び出しが終わりました");
+//
+//	}
+//
+//	public static void hello() {
+//		System.out.println("湊さん、こんにちは");
+//	}
+//
+//}
+
+//5-3
+//public class Main {
+//	public static void methodA() {
+//		System.out.println("methodA");
+//		methodB();
+//	}
+//
+//	public static void methodB() {
+//		System.out.println("methodB");
+//	}
+//
+//	public static void main(String[] args) {
+//		methodA();
+//
+//	}
+//
+//}
+
+//5-4
+//public class Main {
+//	public static void main(String[] args) {
+//		System.out.println("メソッドを呼び出します");
+//		hello("湊");
+//		hello("朝香");
+//		hello("菅原");
+//		System.out.println("メソッドの呼び出しが終わりました");
+//
+//	}
+//
+//	public static void hello(String name) {
+//		System.out.println(name + "さん、こんにちは");
+//	}
+//}
+
+//5-5
+//public class Main {
+//	public static void main(String[] args) {
+//		add(100, 20);
+//		add(200, 50);
+//
+//	}
+//
+//	// 複数の値を受け取るaddメソッド
+//	public static void add(int x, int y) {
+//		int ans = x + y;
+//		System.out.println(x + "+" + y + "=" + ans);
+//	}
+//}
+
+//5-6　エラーになる
+
+//public class Main {
+//	public static void main(String[] args) {
+//		int x = 100;
+//		int y = 10;
+//		add();
+//
+//	}
+//
+//	public static void add() {
+//		int ans = x + y;
+//		System.out.println(x + "+" + y + "=" + ans);
+//	}
+//}
+//Exception in thread "main" java.lang.Error: Unresolved compilation problems: 
+//	x を変数に解決できません
+//	y を変数に解決できません
+//	x を変数に解決できません
+//	y を変数に解決できません
+
+//5-7
+//public class Main {
+//	public static int add(int x, int y) {
+//		int ans = x + y;
+//		return ans;
+//
+//	}
+//
+//	public static void main(String[] args) {
+//		int ans = add(100, 10);
+//		System.out.println("100+10=" + ans);
+//	}
+//}
+
+//5-8
+//public class Main {
+//	public static int add(int x, int y) {
+//		int ans = x + y;
+//		return ans;
+//	}
+//
+//	public static void main(String[] args) {
+//		System.out.println(add(add(10, 20), add(30, 40)));
+//	}
+//
+//}
+
+//5-9 return分の後に処理は書けない　エラー
+//public static int sample() {
+//	
+//	return 1;
+//	int x =10;
+//	
+//}
+//5-10
+//public class Main {
+//	// 1つ目のaddメソッド
+//	public static int add(int x, int y) {
+//		return x + y;
+//	}
+//
+//	// 2つ目のaddメソッド
+//	public static double add(double x, double y) {
+//		return x + y;
+//	}
+//
+//	// 3つ目のaddメソッド
+//	public static String add(String x, String y) {
+//		return x + y;
+//	}
+//
+//	public static void main(String[] args) {
+//		System.out.println(add(10, 20));
+//
+//		System.out.println(add(3.5, 2.7));
+//
+//		System.out.println(add("hello", "World"));
+//	}
+//
+//}
+//5-11
+public class Main {
+	public static int add(int x, int y) {
+		return x + y;
+
+	}
+
+	public static int add(int x, int y, int z) {
+		return x + y + z;
+
+	}
+
+	public static void main(String[] args) {
+		System.out.println("10+20=" + add(10, 20));
+		System.out.println("10+20+30=" + add(10, 20, 30));
+	}
+}
