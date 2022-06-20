@@ -998,19 +998,155 @@
 //
 //}
 //5-11
-public class Main {
-	public static int add(int x, int y) {
-		return x + y;
+//public class Main {
+//	public static int add(int x, int y) {
+//		return x + y;
+//
+//	}
+//
+//	public static int add(int x, int y, int z) {
+//		return x + y + z;
+//
+//	}
+//
+//	public static void main(String[] args) {
+//		System.out.println("10+20=" + add(10, 20));
+//		System.out.println("10+20+30=" + add(10, 20, 30));
+//	}
+//}
 
-	}
+//5-12
+//public class Main {
+//	// int型配列を受け取り、全ての要素を表示するメソッド
+//	public static void printArray(int[] array) {
+//		for (int element : array) {
+//			System.out.println(element);
+//		}
+//	}
+//
+//	public static void main(String[] args) {
+//		int[] array = { 1, 2, 3 };
+//		printArray(array);
+//	}
+//}
 
-	public static int add(int x, int y, int z) {
-		return x + y + z;
+//5-13
+//public class Main {
+//	// int型配列を受け取り、
+//	// 配列内の要素全てに1を加えるメソッド
+//	public static void incArray(int[] array) {
+//		for (int i = 0; i < array.length; i++) {
+//			array[i]++;
+//		}
+//	}
+//
+//	public static void main(String[] args) {
+//		int[] array = { 1, 2, 3 };
+//		incArray(array);
+//		for (int i : array) {
+//			System.out.println(i);
+//		}
+//	}
+//}
 
-	}
+//5-14
+//public class Main {
+//	public static int[] makeArray(int size) {
+//		int[] newArray = new int[size];
+//		for (int i = 0; i < newArray.length; i++) {
+//			newArray[i] = i;
+//
+//		}
+//
+//		return newArray;
+//	}
+//
+//	public static void main(String[] args) {
+//		int[] array = makeArray(3);
+//		for (int i : array) {
+//			System.out.println(i);
+//		}
+//	}
+//}
 
-	public static void main(String[] args) {
-		System.out.println("10+20=" + add(10, 20));
-		System.out.println("10+20+30=" + add(10, 20, 30));
-	}
-}
+//exe5-1
+//public class Main {
+//	public static void introduceOneself() {
+//		String name = "央基";
+//		int age = 0;
+//		float height = 80.5F;
+//		char zodiac = '丑';
+//
+//		System.out.println("私の名前は" + name + "です。");
+//		System.out.println("年齢は" + age + "歳です。");
+//		System.out.println("身長は" + height + "㎝です。");
+//		System.out.println("干支は" + zodiac + "です。");
+//
+//	}
+//
+//	public static void main(String[] args) {
+//		introduceOneself();
+//
+//	}
+//}
+
+//exe5-2
+//public class Main {
+//	public static void email() {
+//		String title = "メールのタイトル";
+//		String address = "メールの宛先アドレス";
+//		String text = "メールの本文";
+//
+//		System.out.println(address + "に、以下のメールを送信しました");
+//		System.out.println("件名：" + title);
+//		System.out.println("本文：" + text);
+//	}
+//
+//	public static void main(String[] args) {
+//		email();
+//	}
+//}
+
+//exe5-3
+//public class Main {
+//	public static void email() {
+//		String address = "メールの宛先アドレス";
+//		String text = "メールの本文";
+//
+//		System.out.println(address + "に、以下のメールを送信しました");
+//		System.out.println("件名：無題");
+//		System.out.println("本文：" + text);
+//	}
+//
+//	public static void main(String[] args) {
+//		email();
+//	}
+//}
+
+//exe5-4
+//public class Main {
+//	public static double calcTriangleArea(double bottom, double height) {
+//
+//		double area = bottom * height / 2;
+//
+//		return area;
+//
+//	}
+//
+//	public static double calcCircleArea(double radius) {
+//		double area = radius * radius * 3;
+//
+//		return area;
+//
+//	}
+//
+//	public static void main(String[] args) {
+//
+//		double triangleArea = calcTriangleArea(10.0, 5.0);
+//		System.out.println("三角形の面積は" + triangleArea + "㎠");
+//
+//		double circleArea = calcCircleArea(5.0);
+//		System.out.println("円の面積は" + circleArea + "㎠");
+//
+//	}
+//}
